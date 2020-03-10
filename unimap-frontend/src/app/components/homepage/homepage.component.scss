@@ -1,0 +1,42 @@
+@import '../../theme.colors.scss';
+@import "~bootstrap/dist/css/bootstrap.css";
+
+.toolbar{
+    background-color: mat-color($app-primary);
+    position: relative;
+    width: 100%;
+    margin-left: 0px;
+    margin-right: 0px;
+    display: inline-block;
+    top: 0;
+    position: fixed;
+    text-align: center;
+    
+}
+
+.example-container {
+    position: absolute;
+    top: 50px;
+    bottom: 50px;
+    left: 0;
+    right: 0;
+    background-color: white;
+    
+  }
+
+  .button-class{
+      color: #000;
+      height: 50px;
+      text-align: center;
+      width: 180px;
+      
+  }
+
+  .center {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top : 115px;
+    width: 25%;
+
+}

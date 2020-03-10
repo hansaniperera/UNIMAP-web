@@ -1,0 +1,29 @@
+<div>
+    <mat-card class="center">
+        <mat-card-title>Add New Student</mat-card-title>
+        <mat-card-subtitle></mat-card-subtitle>
+        <mat-card-content>
+            <form>
+                <mat-form-field>
+                    <mat-label>First Name</mat-label>
+                    <input matInput placeholder="First Name">
+                </mat-form-field>
+                <mat-form-field>
+                    <mat-label>Middle Name</mat-label>
+                    <input matInput placeholder="Middle Name">
+                </mat-form-field>
+                <mat-form-field>
+                    <mat-label>Last Name</mat-label>
+                    <input matInput placeholder="Last Name">
+                </mat-form-field>
+                <br>
+                <mat-form-field>
+                    <input matInput [matDatepicker]="picker" placeholder="Choose Birthday">
+                    <mat-datepicker-toggle matSuffix [for]="picker"></mat-datepicker-toggle>
+                    <mat-datepicker #picker></mat-datepicker>
+                  </mat-form-field>
+            </form>
+        </mat-card-content>
+
+    </mat-card>
+</div>

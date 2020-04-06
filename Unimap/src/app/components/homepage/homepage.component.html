@@ -1,0 +1,61 @@
+<div>
+    
+        <mat-toolbar >
+            <mat-toolbar-row class="toolbar">
+                <div class="row">
+                     <div class="col-md-3"></div>
+                    <div class="col-md-6">
+                        <p></p>
+                        <p>Unimap Student Management System</p>
+                    </div>
+
+                </div>
+            </mat-toolbar-row>
+        </mat-toolbar>
+    
+    <div>
+        <mat-card class="card-main">
+            <div class="row">
+               <div class="col-md-4">
+                    <mat-card class="card">
+                        <button class="button-class" mat-button (click)="addNew()">Add New Students</button>
+                    </mat-card>
+                </div>
+                <div class="col-md-4">
+                    <mat-card class="card">
+                        <button class="button-class" mat-button (click)="updateStu()">Update Student Profile</button>
+                    </mat-card>
+                </div>
+                <div class="col-md-4">
+                    <mat-card class="card">
+                        <button class="button-class" mat-button (click)="searchStu()">Search Student</button>
+                    </mat-card>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-4">
+                    <mat-card class="card">
+                        <button class="button-class" mat-button (click)="addRes()">Add Results</button>
+                    </mat-card>
+                </div>
+                <div class="col-md-4">
+                    <mat-card class="card">
+                        <button class="button-class" mat-button (click)="updateRes()">Update Results</button>
+                    </mat-card>
+                </div>
+                <div class="col-md-4">
+                    <mat-card class="card">
+                        <button class="button-class" mat-button (click)="viewRes()">View Results</button>
+                    </mat-card>
+                </div>
+
+            </div>
+        </mat-card>
+    </div>
+
+
+    <div style="overflow: scroll;">
+        <router-outlet></router-outlet>
+    </div>
+
+</div>

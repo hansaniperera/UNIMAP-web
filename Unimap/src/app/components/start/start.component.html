@@ -1,0 +1,50 @@
+<div class="row">
+    <div class="col-md-6">
+        <div class="sidenav">
+            <br>
+            <br>
+            <img src="assets/logoD.png" alt="Unimap" class="center">
+        </div>
+    </div>
+    <!-- <div class="col-md-2"></div> -->
+    <div class="col-md-6">
+        <div *ngIf="isTrue">
+            <br>
+            <mat-card class="card">
+                <mat-card-title> Welcome To </mat-card-title>
+                <br>
+                <mat-card-title> UNIMAP STUDENT </mat-card-title>
+                <br>
+                <mat-card-title> MANAGEMENT SYSTEM </mat-card-title>
+                <br>
+                <mat-card-content>
+                    <mat-card-actions>
+                        <button class="button" mat-raised-button (click)="onclick()">Log In To
+                            Proceed</button>
+                    </mat-card-actions>
+                </mat-card-content>
+            </mat-card>
+        </div>
+        <div *ngIf="isCard">
+            <mat-card class="card2">
+                <mat-card-title>Login</mat-card-title>
+                <mat-card-content>
+                    <form class="form1" [formGroup]="dataForm" (ngSubmit)="onFormSubmit()">
+                        <mat-form-field>
+                            <input type="text" matInput placeholder="Username" formControlName="username" required>
+                            <mat-icon matSuffix>person</mat-icon>
+                        </mat-form-field>
+                        <mat-form-field>
+                            <input matInput placeholder="Enter Password" type="password" formControlName="password"
+                                required>
+                            <mat-icon matSuffix>vpn_key</mat-icon>
+                        </mat-form-field>
+                        <br>
+                        <button class="button" type="submit" (click)="onSubmit()" mat-raised-button
+                            class="button">Register</button>
+                    </form>
+                </mat-card-content>
+            </mat-card>
+        </div>
+    </div>
+</div>

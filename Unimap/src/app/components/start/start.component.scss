@@ -1,0 +1,80 @@
+@import '../../theme.colors.scss';
+@import "~bootstrap/dist/css/bootstrap.css";
+
+.sidenav{
+    height: 200%;
+    width : 108%;
+    background-color:#00897B;
+    display: block; 
+}
+
+.right{
+    background-color:white;
+    color: black;
+    text-align: center;
+    margin-top: 75px;
+}
+
+.text{
+    font-size:3vw;
+    font-family: monospace;
+    color: black;
+    margin-top: 2px;
+}
+
+.center {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 100px;
+   
+
+}
+
+.button {
+    margin-left: 0.5px ;
+    margin-right: 0.5px ;
+    width: 50%;
+    height: 25px;
+    background-color: mat-color($app-primary);
+    color: black;
+    font-size:1.23vw;
+    text-align: center;
+}
+
+.card{
+    display: block;
+    margin-left: 15%;
+    margin-top: 23%;
+    width: 75%;
+    background-color: white; 
+    color: black;
+    text-align: center;
+}
+
+.card2{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 0;
+    width: 30%;
+    background-color: white; 
+    color: black;
+}
+
+.form1{
+    color: #00897B;
+    min-width: 200px;
+    max-width: 500px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%;
+
+}
+
+mat-form-field.mat-form-field {
+    font-size: 16px;
+    color: #00897B;
+  }
+

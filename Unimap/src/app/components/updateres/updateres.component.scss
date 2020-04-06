@@ -1,0 +1,40 @@
+@import "~bootstrap/dist/css/bootstrap.css";
+@import '../../theme.colors.scss';
+
+.center {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top : 70px;
+    width: 40%;
+    height: 35%;
+    background-color: white;
+    padding: 5%;
+    color: black;
+    text-align: center;
+}
+
+
+ 
+  mat-form-field.mat-form-field {
+    font-size: 1.25vw;
+    color: black;
+  }
+
+ 
+.example-25-width {
+  width: 30%;
+}
+
+.button {
+  margin-left: 0 ;
+  margin-right: 0 ;
+  width: 40%;
+  margin-top: auto;
+  background-color: mat-color($app-primary);
+  color: black;
+  font-size:1.25vw;
+  text-align: center;
+}
+
+  

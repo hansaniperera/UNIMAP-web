@@ -1,0 +1,88 @@
+<div>
+    <mat-card class="center">
+        <mat-card-title>Update Student Details</mat-card-title>
+        <mat-card-subtitle>Update new details</mat-card-subtitle>
+        <mat-card-content>
+
+            <form [formGroup] = "dataForm" (ngSubmit)="onFormSubmit()">
+
+                <mat-form-field class="example-25-width">
+                    <mat-label>First Name</mat-label>
+                    <input matInput placeholder="First Name" formControlName="fname">
+                </mat-form-field>
+                &nbsp;
+                <mat-form-field class="example-25-width">
+                    <mat-label>Middle Name</mat-label>
+                    <input matInput placeholder="Middle Name" formControlName="mname">
+                </mat-form-field>
+                &nbsp;
+                <mat-form-field class="example-25-width">
+                    <mat-label>Last Name</mat-label>
+                    <input matInput placeholder="Last Name" formControlName="lname">
+                </mat-form-field>
+                <br>
+                <mat-form-field class="example-75-width">
+                    <mat-label>Address</mat-label>
+                    <input matInput placeholder="Address" formControlName="address">
+                </mat-form-field>
+                <br>
+                <mat-form-field class="example-50-width">
+                    <mat-label>Telephone</mat-label>
+                    <input matInput placeholder="Telephone" formControlName="telephone">
+                </mat-form-field>
+                &nbsp;
+                <mat-form-field class="example-50-width">
+                    <input matInput [matDatepicker]="picker" placeholder="Choose Birthday" formControlName="bday">
+                    <mat-datepicker-toggle matSuffix [for]="picker"></mat-datepicker-toggle>
+                    <mat-datepicker #picker startView="year"></mat-datepicker>
+                </mat-form-field>
+                <br>
+                <mat-form-field class="example-25-width">
+                    <input matInput [matDatepicker]="picker1" placeholder="Choose Register Date" formControlName="regdate">
+                    <mat-datepicker-toggle matSuffix [for]="picker1"></mat-datepicker-toggle>
+                    <mat-datepicker #picker1 [startAt]="startDate"></mat-datepicker>
+                </mat-form-field>
+                &nbsp;
+                <mat-form-field class="example-25-width">
+                    <mat-label>Batch</mat-label>
+                    <mat-select placeholder="Batch" formControlName="batch">
+                        <mat-option *ngFor="let year of range" [value]="year">
+                            {{year}}
+                        </mat-option>
+                    </mat-select>
+                </mat-form-field>
+                &nbsp;
+                <mat-form-field class="example-25-width">
+                    <mat-label>User Type</mat-label>
+                    <mat-select formControlName="type">
+                        <mat-option value="Student">Student</mat-option>
+                        <mat-option value="Student Coordinator">Student Coordinator</mat-option>
+                        <mat-option value="Lecturer">Lecturer</mat-option>
+                        <mat-option value="Admin">Admin</mat-option>
+                    </mat-select>
+                </mat-form-field>
+                <br>
+                <mat-form-field class="example-25-width">
+                    <mat-label>Username</mat-label>
+                    <input matInput placeholder="Username" formControlName="username">
+                </mat-form-field>
+                &nbsp;
+                <mat-form-field class="example-25-width">
+                    <mat-label>Password</mat-label>
+                    <input matInput placeholder="Enter Password" type="password" required formControlName="password">
+                </mat-form-field>
+                &nbsp;
+                <mat-form-field class="example-25-width">
+                    <mat-label>Confirm Password</mat-label>
+                    <input matInput placeholder="Confirm Password" type="password" required formControlName="cpassword">
+                </mat-form-field>
+                <br>
+                <button type="submit"  mat-raised-button class="button">Update</button>
+
+            </form>
+
+
+        </mat-card-content>
+
+    </mat-card>
+</div>

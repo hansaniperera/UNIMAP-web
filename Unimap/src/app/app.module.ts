@@ -25,10 +25,8 @@ import { ViewresComponent } from './components/viewres/viewres.component';
 import { FormsModule } from '@angular/forms';
 import { ReactiveFormsModule } from '@angular/forms';
 import { MatTableModule } from '@angular/material';
-//import {ReactiveFormsModule} from '@angular/forms';
-//import {FlexLayoutModule} from '@angular/flex-layout';
-
-
+import { HttpClient, HttpClientModule } from '@angular/common/http';
+import {MatSnackBarModule} from '@angular/material/snack-bar';
 
 
 @NgModule({
@@ -43,8 +41,7 @@ import { MatTableModule } from '@angular/material';
     AddresultComponent,
     UpdateresComponent,
     ViewresComponent
-    
-    
+ 
   ],
   imports: [
     BrowserModule,
@@ -66,6 +63,9 @@ import { MatTableModule } from '@angular/material';
     FormsModule,
     ReactiveFormsModule,
     MatTableModule,
+    HttpClientModule,
+    MatSnackBarModule
+
    
    
   ],

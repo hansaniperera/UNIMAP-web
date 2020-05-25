@@ -124,6 +124,10 @@
           }
         }
       }
-    }},
-  "defaultProject": "unimap"
+    }
+  },
+  "defaultProject": "unimap",
+  "cli": {
+    "analytics": false
+  }
 }

@@ -29,7 +29,7 @@
             <mat-card class="card2">
                 <mat-card-title>Login</mat-card-title>
                 <mat-card-content>
-                    <form class="form1" [formGroup]="dataForm" (ngSubmit)="onFormSubmit()">
+                    <form class="form1" [formGroup]="dataForm">
                         <mat-form-field>
                             <input type="text" matInput placeholder="Username" formControlName="username" required>
                             <mat-icon matSuffix>person</mat-icon>
@@ -40,8 +40,8 @@
                             <mat-icon matSuffix>vpn_key</mat-icon>
                         </mat-form-field>
                         <br>
-                        <button class="button" type="submit" (click)="onSubmit()" mat-raised-button
-                            class="button">Register</button>
+                        <button mat-raised-button type="submit" (click)="onSubmit()" 
+                            class="button">Log In</button>
                     </form>
                 </mat-card-content>
             </mat-card>
